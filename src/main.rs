@@ -32,12 +32,6 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
         }
     };
 
-    // match traverse(&args, regex) {
-    //     Ok(contents) => println!("Paths {}", contents),
-    //     Err(error) => println!("Error: {}", error),
-    // }
-
-    // Ok(())
     let path = Path::new(&args.path);
     
     traverse(&args, path, &regex)?;
